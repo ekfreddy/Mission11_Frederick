@@ -15,3 +15,17 @@ export interface BooksResponse {
   pageSize: number;
   books: Book[];
 }
+
+export interface CartItem {
+  bookId: number;
+  title: string;
+  author: string;
+  price: number;
+  quantity: number;
+  subtotal: number;
+}
+
+export interface CartResponse {
+  items: CartItem[];
+  total: number;
+}
